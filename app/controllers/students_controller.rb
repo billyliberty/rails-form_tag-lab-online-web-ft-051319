@@ -19,4 +19,8 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
 
+  def set_student
+    @student = Student.find(params[:id])
+  end
+
 end
